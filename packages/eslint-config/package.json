@@ -1,0 +1,18 @@
+{
+  "name": "@chookslint/eslint-config",
+  "version": "2.0.0",
+  "license": "MIT",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Choooks22/eslint-config.git",
+    "directory": "packages/eslint-config"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
