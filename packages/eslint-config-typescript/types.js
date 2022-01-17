@@ -4,9 +4,6 @@ const optional = {
   '@typescript-eslint/consistent-type-exports': [
     1,
   ],
-  '@typescript-eslint/prefer-readonly-parameter-types': [
-    1,
-  ],
 }
 
 const required = {
