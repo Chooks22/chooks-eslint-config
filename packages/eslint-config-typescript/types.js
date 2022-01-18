@@ -16,6 +16,12 @@ const required = {
   '@typescript-eslint/no-unnecessary-condition': [
     1,
   ],
+  '@typescript-eslint/no-misused-promises': [
+    2,
+    {
+      checksVoidReturn: false,
+    },
+  ],
   '@typescript-eslint/no-unnecessary-type-arguments': [
     1,
   ],
