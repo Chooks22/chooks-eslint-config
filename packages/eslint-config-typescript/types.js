@@ -13,9 +13,6 @@ const required = {
   '@typescript-eslint/no-meaningless-void-operator': [
     1,
   ],
-  '@typescript-eslint/no-unnecessary-condition': [
-    1,
-  ],
   '@typescript-eslint/no-misused-promises': [
     2,
     {
