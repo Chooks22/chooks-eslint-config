@@ -40,6 +40,9 @@ const required = {
 }
 
 const requiredTsOnly = {
+  '@typescript-eslint/restrict-template-expressions': [
+    0
+  ],
   '@typescript-eslint/no-unsafe-assignment': [
     1,
   ],
