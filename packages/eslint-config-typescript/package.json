@@ -1,6 +1,6 @@
 {
   "name": "@chookslint/eslint-config-typescript",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "description": "An extended ruleset for @chookslint/eslint-config for TypeScript projects.",
   "main": "index.js",
