@@ -153,6 +153,18 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       rules: requiredTsOnly,
     },
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'spaced-comments': [
+          2,
+          'always',
+          {
+            markers: ['/'],
+          },
+        ],
+      },
+    },
   ],
   rules: {
     ...optional,
