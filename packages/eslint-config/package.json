@@ -10,7 +10,7 @@
     "directory": "packages/eslint-config"
   },
   "peerDependencies": {
-    "eslint": ">= 8.1.0"
+    "eslint": ">= 8.45.0"
   },
   "publishConfig": {
     "access": "public"

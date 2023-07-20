@@ -18,7 +18,7 @@ extends:
   - "@chookslint"
 ```
 
-Requires `eslint@8.1.0` or greater to work.
+Requires `eslint@8.45.0` or greater to work.
 
 ## Available Configs
 

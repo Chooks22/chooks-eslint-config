@@ -23,7 +23,10 @@ extends:
   - "@chookslint/eslint-config-typescript"
 ```
 
-Requires `eslint@8.1.0` or greater to work.
+Requires the following dependencies to work:
+  - `eslint@8.45.0` or greater
+  - `@typescript-eslint/parser@6.0.0` or greater
+  - `@typescript-eslint/eslint-plugin@6.0.0` or greater
 
 ## Available Configs
 
