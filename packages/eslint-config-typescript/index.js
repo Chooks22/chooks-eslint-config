@@ -35,9 +35,6 @@ const stylisticTsExtension = {
     2,
     'never',
   ],
-  'no-duplicate-imports': [
-    1,
-  ],
   'no-extra-parens': [
     1,
     'all',
