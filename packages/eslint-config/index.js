@@ -274,6 +274,13 @@ const optional = {
   'no-throw-literal': [
     1,
   ],
+  'no-unused-vars': [
+    1,
+    {
+      varsIgnorePattern: '^_',
+      argsIgnorePattern: '^_',
+    },
+  ],
   'prefer-numeric-literals': [
     1,
   ],
