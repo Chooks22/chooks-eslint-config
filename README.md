@@ -43,3 +43,12 @@ You can copy/fork/extend my config to suit your needs.
 - Disabled `semi`
 - Made strict rules (like `complexity`) opt-in via a `/strict` ruleset flavour
 - Stuck to a more maintable, `.js` only config files
+
+## Changes from v2
+
+- Updated to `eslint@8.45`
+- Update `@typescript-eslint` versions
+- Removed deprecated rules
+- Removed support for archaic ES3 from `dot-notation`
+- Unused vars now ignores vars starting with `_`
+- Fixed to allow triple-slash directives in typescript declaration files

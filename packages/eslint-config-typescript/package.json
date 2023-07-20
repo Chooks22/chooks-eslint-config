@@ -1,8 +1,8 @@
 {
   "name": "@chookslint/eslint-config-typescript",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "license": "MIT",
-  "description": "",
+  "description": "An extended ruleset for @chookslint/eslint-config for TypeScript projects.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
     "directory": "packages/eslint-config-typescript"
   },
   "dependencies": {
-    "@chookslint/eslint-config": "^2.0.0"
+    "@chookslint/eslint-config": "^3.0.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">= 6.0.0",

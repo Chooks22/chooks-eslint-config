@@ -1,8 +1,8 @@
 {
   "name": "@chookslint/eslint-config",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "license": "MIT",
-  "description": "",
+  "description": "An ESLint config for Modern (ES2020+) JavaScript projects.",
   "main": "index.js",
   "repository": {
     "type": "git",
