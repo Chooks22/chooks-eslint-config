@@ -324,9 +324,6 @@ const required = {
   ],
   'dot-notation': [
     2,
-    {
-      allowKeywords: false,
-    },
   ],
   'eqeqeq': [
     2,
