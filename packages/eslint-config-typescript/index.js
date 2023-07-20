@@ -52,6 +52,13 @@ const stylisticTsExtension = {
   'no-unused-expressions': [
     1,
   ],
+  'no-unused-vars': [
+    1,
+    {
+      varsIgnorePattern: '^_',
+      argsIgnorePattern: '^_',
+    },
+  ],
   'no-use-before-define': [
     2,
   ],
