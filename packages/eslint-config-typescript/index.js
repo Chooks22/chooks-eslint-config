@@ -163,7 +163,7 @@ module.exports = {
     {
       files: ['*.d.ts'],
       rules: {
-        'spaced-comments': [
+        'spaced-comment': [
           2,
           'always',
           {
