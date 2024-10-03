@@ -1,6 +1,8 @@
 # chooks-eslint-config
 
-Monorepo for storing my ([@Choooks22](https://github.com/Choooks22)) ESLint configs.
+My ESLint config for projects I manage. Based loosely off of both
+[ESLint recommended](https://www.npmjs.com/package/@eslint/js) and
+[StandardJS](https://standardjs.com/).
 
 ## Configs
 

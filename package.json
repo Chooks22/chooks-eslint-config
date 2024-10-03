@@ -1,15 +1,51 @@
 {
-  "name": "chooks-eslint-config",
-  "packageManager": "pnpm@8.6.9",
-  "private": true,
+  "name": "eslint-config-chooks",
+  "description": "ESLint config for linting and formatting JS/TS files",
+  "version": "1.0.0",
+  "type": "module",
   "license": "MIT",
+  "files": [
+    "configs",
+    "index.js",
+    "index.d.ts",
+    "configs.d.ts"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./js": {
+      "default": "./configs/js.js",
+      "types": "./configs.d.ts"
+    },
+    "./ts": {
+      "default": "./configs/ts.js",
+      "types": "./configs.d.ts"
+    },
+    "./svelte": {
+      "default": "./configs/svelte.js",
+      "types": "./configs.d.ts"
+    }
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^2.8.0",
+    "typescript-eslint": "^8.8.0"
+  },
   "devDependencies": {
-    "@chookslint/eslint-config": "*",
-    "@chookslint/eslint-config-typescript": "*",
-    "@types/node": "^20.4.2",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
-    "eslint": "^8.45.0",
-    "typescript": "^5.1.6"
-  }
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.7.4",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
+  },
+  "author": "Chooks22 <chooksdev@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chooks22/eslint-config-chooks"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "stylistic"
+  ]
 }
