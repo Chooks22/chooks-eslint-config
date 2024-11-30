@@ -1,15 +1,38 @@
 {
   "name": "chooks-eslint-config",
-  "packageManager": "pnpm@8.6.9",
-  "private": true,
+  "description": "Chooks22's ESLint config preset",
+  "version": "1.0.0-rc.1",
+  "type": "module",
   "license": "MIT",
-  "devDependencies": {
-    "@chookslint/eslint-config": "*",
-    "@chookslint/eslint-config-typescript": "*",
-    "@types/node": "^20.4.2",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
-    "eslint": "^8.45.0",
-    "typescript": "^5.1.6"
-  }
+  "files": [
+    "index.js",
+    "types/index.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "default": "./index.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "3.11.2",
+    "eslint-plugin-prefer-let": "^4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "author": {
+    "name": "Chooks22",
+    "email": "chooksdev@gmail.com",
+    "url": "https://github.com/Chooks22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chooks22/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ]
 }

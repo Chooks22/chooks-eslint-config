@@ -1,5 +1,0 @@
-env:
-  node: true
-root: true
-extends:
-  - "@chookslint/eslint-config/strict"
