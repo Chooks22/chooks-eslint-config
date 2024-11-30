@@ -39,15 +39,21 @@ let rules = [
  * @type {typeof import('@antfu/eslint-config').antfu}
  */
 function chooks(options, ...userConfigs) {
+  /** @type {import('@antfu/eslint-config').OptionsTypescript=} */
+  let ts = options?.typescript ? {} : undefined
+
   return antfu(
     {
       typescript: {
+        ...ts,
         overrides: {
+          'ts/promise-function-async': 'off',
           'ts/consistent-type-definitions': ['warn', 'type'],
           'ts/no-floating-promises': ['warn', {
             checkThenables: true,
             ignoreVoid: true,
           }],
+          ...ts?.overrides,
         },
       },
       ...options,
