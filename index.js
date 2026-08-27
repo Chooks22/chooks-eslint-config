@@ -22,6 +22,13 @@ let rules = [
       'style/arrow-parens': ['error', 'as-needed'],
       'style/brace-style': ['error', '1tbs'],
       'style/no-extra-parens': 'error',
+      'style/operator-linebreak': ['error', 'after', {
+        overrides: {
+          '|': 'before',
+          '?': 'before',
+          ':': 'before',
+        },
+      }],
     },
   },
   {
@@ -33,31 +40,36 @@ let rules = [
       }],
     },
   },
+  {
+    name: 'chooks/ts',
+    files: ['**/*.ts'],
+    rules: {
+      'ts/promise-function-async': 'off',
+      'ts/consistent-type-definitions': ['warn', 'type'],
+      'ts/no-floating-promises': ['warn', {
+        checkThenables: true,
+        ignoreVoid: true,
+      }],
+    },
+  },
+  {
+    name: 'chooks/svelte',
+    files: ['**/*.svelte'],
+    rules: {
+      'svelte/block-lang': ['error', { script: 'ts' }],
+      'svelte/html-quotes': ['error', { prefer: 'double' }],
+      'svelte/shorthand-attribute': ['error'],
+      'svelte/shorthand-directive': ['error'],
+    },
+  },
 ]
 
 /**
  * @type {typeof import('@antfu/eslint-config').antfu}
  */
 function chooks(options, ...userConfigs) {
-  /** @type {import('@antfu/eslint-config').OptionsTypescript=} */
-  let ts = options?.typescript ? {} : undefined
-
   return antfu(
-    {
-      typescript: {
-        ...ts,
-        overrides: {
-          'ts/promise-function-async': 'off',
-          'ts/consistent-type-definitions': ['warn', 'type'],
-          'ts/no-floating-promises': ['warn', {
-            checkThenables: true,
-            ignoreVoid: true,
-          }],
-          ...ts?.overrides,
-        },
-      },
-      ...options,
-    },
+    options,
     ...rules,
     ...userConfigs,
   )
